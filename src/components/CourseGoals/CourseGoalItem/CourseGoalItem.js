@@ -9,10 +9,11 @@ const CourseGoalItem = props => {
     // setDeleteText('(Deleted!)');
     props.onDelete(props.id);
   };
+  
 
   return (
     <li className="goal-item" onClick={deleteHandler}>
-      {props.children}
+      {props.text}
     </li>
   );
 };
